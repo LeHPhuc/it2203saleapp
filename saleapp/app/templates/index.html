@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trang chủ</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<h1>BẢNG CỬA CHƯƠNG</h1>
+<ul>
+    {% for i in range(20) %}
+    <li>
+        {{i}} * 2 = {{2*i}}
+    </li>
+    {%endfor%}
+</ul>
+</body>
+</html>
